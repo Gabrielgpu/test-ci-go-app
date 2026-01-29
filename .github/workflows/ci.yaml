@@ -1,7 +1,9 @@
 name: ci-golang-workflow
-pull_request:
-  branches:
-    - develop
+on:
+  pull_request:
+    branches:
+      - develop
+      - release**/
 
 jobs:
   check-application:
